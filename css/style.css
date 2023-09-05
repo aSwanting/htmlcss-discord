@@ -117,6 +117,14 @@ body {
     align-items: center;
 }
 
+.row-reverse {
+    flex-direction: row-reverse;
+}
+
+.column {
+    flex-direction: column;
+}
+
 
 .btn-light {
     background-color: white;
@@ -149,6 +157,9 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
+.bg-grey {
+    background-color: #F6F6F6;
+}
 
 /* HEADER */
 
@@ -214,17 +225,8 @@ body {
 
 .image-text {
     color: #313338;
-    padding-block: 60px;
-    transition: all 200ms ease-in-out;
+    padding-block: 100px;
 }
-
-.image-text:focus {
-    opacity: 1;
-}
-
-/* .image-text img {
-    padding-right: 40px;
-} */
 
 .image-text h2 {
     font-size: 48px;
@@ -235,9 +237,12 @@ body {
 
 .image-text p {
     font-size: 20px;
-    font-weight: 300;
-    
+    font-weight: 300;    
 }
+
+
+
+
 
 /* DEBUG */
 
@@ -246,13 +251,14 @@ body {
 }
 
 .debug section {
-    border: 1px dashed rgb(42, 167, 79);
+    border: 1px dashed rgb(119, 243, 156);
 }
 
 .debug header [class^='col'] {
     border: 1px dotted white;
 }
 .debug main [class^='col'] {
-    border: 1px dotted white;
+    border: 1px dotted rgb(99, 99, 99);
     min-height: 200px;
+    padding: 10px;
 }
