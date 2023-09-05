@@ -208,8 +208,9 @@ body {
     background-size: cover;
     color: white;
     text-align: center;
-    min-height: 600px;
+    /* min-height: 600px; */
     padding-top: 100px;
+    padding-bottom: 180px;
 }
 
 .page-hero h1 {
