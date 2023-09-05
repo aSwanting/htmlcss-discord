@@ -1,22 +1,37 @@
-/* RESET RULES */
+/* FONTS */
 
 @font-face {
-    font-family: gg sans;
-    src: url(../font/gg_sans/gg_sans_Normal.ttf);
+    font-family: "gg sans";
+    src: url(../font/gg-sans/gg_sans_Normal.ttf);
     font-weight: 300;
 }
 
 @font-face {
-    font-family: gg sans;
-    src: url(../font/gg_sans/gg_sans_Medium.ttf);
+    font-family: "gg sans";
+    src: url(../font/gg-sans/gg_sans_Medium.ttf);
     font-weight: 500;
 }
 
 @font-face {
-    font-family: gg sans;
-    src: url(../font/gg_sans/gg_sans_Bold.ttf);
+    font-family: "gg sans";
+    src: url(../font/gg-sans/gg_sans_Semibold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "gg sans";
+    src: url(../font/gg-sans/gg_sans_Bold.ttf);
     font-weight: 700;
 }
+
+@font-face {
+    font-family: "ginto nord";
+    src: url(../font/ginto-nord/Ginto-Nord-700.woff);
+    font-weight: 700;
+}
+
+
+/* RESET RULES */
 
 * {
     box-sizing: border-box;
@@ -39,6 +54,7 @@ button {
     color: currentColor;
     font-size: inherit;
     font-weight: inherit;
+    font-family: inherit;
 }
 
 /* GENERAL STYLE */
@@ -48,13 +64,17 @@ body {
 }
 
 .container {
-    max-width: 1080px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.col-10 {
+    flex-basis: calc((100% / 12) * 10);
 }
 
 .space-between {
@@ -65,21 +85,42 @@ body {
     justify-content: space-around;
 }
 
+.justify-center {
+    justify-content: center;
+}
+
 .items-center {
     align-items: center;
 }
 
-.btn-white {
+.btn-light {
     background-color: white;
     color: rgb(87, 87, 87);
-    padding: 8px;
+    padding-block: 8px;
+    padding-inline: 20px;
     border-radius: 50px;
     cursor: pointer;
     transition: all 200ms ease-in-out;
 }
 
-.btn-white:hover {    
+.btn-light:hover {    
     color: #5865f2;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-dark {
+    background-color: #313338;
+    color: rgb(240, 240, 240);
+    padding-block: 8px;
+    padding-inline: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
+
+.btn-dark:hover {    
+    background-color: #404349;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -87,10 +128,10 @@ body {
 /* HEADER */
 
 .page-header {
-    background-color: #404EED;
+    background-color: #255EE9;
     color: white;
     font-weight: 700;
-    padding: 20px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -107,7 +148,54 @@ body {
     font-weight: 400;
 }
 
+/* PAGE HERO */
+
+.page-hero {
+    background-color: #255EE9;
+    background-image: url(../img/jumbo.png);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    min-height: 600px;
+    padding-top: 100px;
+}
+
+.page-hero h1 {
+    font-family: "ginto nord";
+    font-size: 52px;    
+    line-height: 52px;
+    margin-bottom: 30px;
+}
+
+.page-hero p {
+    font-size: 20px;
+    line-height: 1.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    gap: 10px 40px;
+}
+
+.page-content button {
+    font-size: 20px;
+    line-height: 40px;
+    padding-inline: 40px;
+}
+
+
+
 /* DEBUG */
+
+.debug .page-content {
+    background-color: cadetblue;    
+}
+
+.debug section {
+    border: 1px dashed yellow;
+}
 
 .debug [class^='col'] {
     border: 1px dotted white;
