@@ -177,7 +177,7 @@ body {
 }
 
 .btn-blue:hover {    
-    background-color: #979eeb;
+    background-color: #7983F5;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
 }
 
@@ -191,7 +191,7 @@ body {
     background-color: #255EE9;
     color: white;
     font-weight: 700;
-    padding: 25px;
+    padding-top: 20px;
     text-align: center;
 }
 
@@ -218,32 +218,40 @@ body {
     color: white;
     text-align: center;
     /* min-height: 600px; */
-    padding-top: 100px;
-    padding-bottom: 180px;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+.page-hero h1,
+.page-hero p {
+    margin-bottom: 40px;
 }
 
 .page-hero h1 {
     font-family: "ginto nord";
-    font-size: 52px;    
-    line-height: 52px;
-    margin-bottom: 30px;
+    font-size: 56px;    
+    line-height: 52px;    
 }
 
 .page-hero p {
     font-size: 20px;
-    line-height: 1.5em;
-    font-weight: 500;
-    margin-bottom: 30px;
+    line-height: 35px;
+    font-weight: 500;    
 }
 
 .hero-buttons {
-    gap: 10px 40px;
+    gap: 10px 30px;
+}
+
+.dl-dark, .dl-light {
+    vertical-align: -4px;
+    margin-right: 8px;
 }
 
 .page-content button {
     font-size: 20px;
     line-height: 40px;
-    padding-inline: 40px;
+    padding-inline: 30px;
 }
 
 /* IMAGE-TEXT */
@@ -251,6 +259,11 @@ body {
 .image-text, .large-image-text {
     color: #313338;
     padding-block: 100px;
+}
+
+.image-text.bg-grey, 
+.large-image-text.bg-grey {
+    padding-block: 60px;
 }
 
 .image-text h2 {
@@ -349,7 +362,7 @@ body {
 
 .logo-bar img {
 
-    height: 20px;
+    height: 22px;
 }
 
 .logo-bar a {
@@ -360,6 +373,17 @@ body {
     font-size: 14px;
     line-height: 14px;
     padding: 10px 20px;
+}
+
+/* WAVES */
+
+.wave {
+    height: 40px;
+    background-image: url(../img/wave.svg);    
+}
+
+.wave.flipped {
+    transform: rotate(180deg);
 }
 
 /* DEBUG */
@@ -380,3 +404,4 @@ body {
 /*     min-height: 200px; */
     padding: 10px;
 }
+
