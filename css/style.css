@@ -252,11 +252,6 @@ body {
     padding-block: 100px;
 }
 
-.image-text.bg-grey, 
-.large-image-text.bg-grey {
-    padding-block: 60px;
-}
-
 .image-text h2 {
     font-size: 48px;
     line-height: 48px;
@@ -366,16 +361,31 @@ body {
     padding-inline: 20px;
 }
 
+
+
 /* WAVES */
 
-.wave {
-    height: 40px;
-    background-image: url(../img/wave.svg);    
+.bg-grey {
+    background-color: #dae1f1;
+}
+
+.image-text.bg-grey, 
+.large-image-text.bg-grey {
+    padding-block: 40px;
+}
+
+ .wave-shape {
+    display: block;
+    fill:  #dae1f1;
+    width: 100%; 
+    height: 60px;
 }
 
 .wave.flipped {
     transform: rotate(180deg);
 }
+
+
 
 /* DEBUG */
 
