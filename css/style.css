@@ -134,15 +134,19 @@ body {
     flex-direction: column;
 }
 
+.btn-base {
+    font-size: 20px;
+    line-height: 55px;
+    padding-inline: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 200ms ease-in-out;
+}
 
 .btn-light {
     background-color: white;
     color: rgb(87, 87, 87);
-    padding-block: 8px;
-    padding-inline: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 200ms ease-in-out;
+
 }
 
 .btn-light:hover {    
@@ -154,11 +158,6 @@ body {
 .btn-dark {
     background-color: #313338;
     color: rgb(240, 240, 240);
-    padding-block: 8px;
-    padding-inline: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 200ms ease-in-out;
 }
 
 .btn-dark:hover {    
@@ -169,11 +168,6 @@ body {
 .btn-blue {
     background-color: #5865F2;
     color: rgb(240, 240, 240);
-    padding-block: 8px;
-    padding-inline: 20px;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 200ms ease-in-out;
 }
 
 .btn-blue:hover {    
@@ -206,6 +200,7 @@ body {
 .header-login button {    
     width: 124px;
     font-weight: 400;
+    line-height: 35px;
 }
 
 /* PAGE HERO */
@@ -248,11 +243,7 @@ body {
     margin-right: 8px;
 }
 
-.page-content button {
-    font-size: 20px;
-    line-height: 40px;
-    padding-inline: 30px;
-}
+
 
 /* IMAGE-TEXT */
 
@@ -371,8 +362,8 @@ body {
 
 .footer-login button {
     font-size: 14px;
-    line-height: 14px;
-    padding: 10px 20px;
+    line-height: 32px;
+    padding-inline: 20px;
 }
 
 /* WAVES */
